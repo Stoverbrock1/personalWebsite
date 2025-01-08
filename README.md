@@ -1,2 +1,2 @@
 # personalWebsite
-Personal website to be run on raspberry pi
+My personal website to be run on raspberry pi
