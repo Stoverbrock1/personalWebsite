@@ -1,20 +1,37 @@
+:root {
+    --bg: #ffffff;
+    --text: #111111;
+    --heading: rgb(23, 109, 109);
+    --section-border: #9ccc65;
+    --link: #0a5f73;
+}
+
+body[data-theme="dark"] {
+    --bg: #121212;
+    --text: #f0f0f0;
+    --heading: #7fd0d0;
+    --section-border: #3a6b3a;
+    --link: #9ad8ff;
+}
+
 body {
     font: normal clamp(0.8125rem, 0.6875rem + 0.4375vw, 1.09375rem) Verdana;
     line-height: 1.6;
     margin: 1rem clamp(0.75rem, 3vw, 2.5rem);
-    background-color: #ffffff;
+    background-color: var(--bg);
+    color: var(--text);
     text-align: center;
 }
 
 h1 {
     font: normal clamp(1.875rem, 1.46875rem + 0.9375vw, 2.625rem) Serif;
-    color: rgb(23, 109, 109);
+    color: var(--heading);
     margin: 1em 0 1em;
 }
 
 h2 {
     font: normal clamp(1.375rem, 1.09375rem + 0.71875vw, 1.875rem) Serif;
-    color: rgb(23, 109, 109);
+    color: var(--heading);
     margin: 0 0 0.5em;
 }
 
@@ -37,14 +54,28 @@ main img {
 section {
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 1px solid #9ccc65;
+    border-top: 1px solid var(--section-border);
 }
 
 article {
-    background: #ffffff;
+    background: var(--bg);
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 8px;
+}
+
+a {
+    color: var(--link);
+}
+
+#theme-toggle {
+    font: inherit;
+    padding: 0.45rem 0.75rem;
+    border: 1px solid var(--section-border);
+    background: var(--bg);
+    color: var(--text);
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 ul {
