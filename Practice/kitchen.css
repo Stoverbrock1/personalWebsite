@@ -1,42 +1,37 @@
 body {
-    font: normal clamp(1.3rem, 1.1rem + 0.7vw, 1.75rem) Verdana;
+    font: normal clamp(0.8125rem, 0.6875rem + 0.4375vw, 1.09375rem) Verdana;
     line-height: 1.6;
     margin: 1rem clamp(0.75rem, 3vw, 2.5rem);
     background-color: #ffffff;
+    text-align: center;
 }
 
 h1 {
-    font: normal clamp(3rem, 2.35rem + 1.5vw, 4.2rem) Serif;
+    font: normal clamp(1.875rem, 1.46875rem + 0.9375vw, 2.625rem) Serif;
     color: rgb(23, 109, 109);
     margin: 1em 0 1em;
 }
 
 h2 {
-    font: normal clamp(2.2rem, 1.75rem + 1.15vw, 3rem) Serif;
+    font: normal clamp(1.375rem, 1.09375rem + 0.71875vw, 1.875rem) Serif;
     color: rgb(23, 109, 109);
     margin: 0 0 0.5em;
 }
 
 h3 {
-    font-size: clamp(1.5rem, 1.3rem + 0.55vw, 1.9rem);
+    font-size: clamp(0.9375rem, 0.8125rem + 0.34375vw, 1.1875rem);
     margin-bottom: 0.2em;
 }
 
 img {
-    margin: 0 20px 0 0;
+    margin: 0;
 }
 
 main img {
-    width: 300px;
+    width: min(60vw, 688px);
     height: auto;
-    margin: 0;
+    margin: 1rem auto 2rem;
     display: block;
-    margin-left: auto;
-    margin-right: 0;
-}
-
-nav a {
-    margin-right: 1rem;
 }
 
 section {
@@ -50,6 +45,11 @@ article {
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 8px;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 0;
 }
 
 small {
